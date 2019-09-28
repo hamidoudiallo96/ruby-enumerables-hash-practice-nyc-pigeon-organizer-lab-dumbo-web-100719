@@ -1,4 +1,4 @@
-def nyc_pigeon_organizer(data)
+def nyc_pigeon_organizer(pigeon_data)
   final_pigeon_organizer = {}
   
   data.each do |(color_gender_lives,values)|
