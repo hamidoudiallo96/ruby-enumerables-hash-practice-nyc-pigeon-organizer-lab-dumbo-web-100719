@@ -1,16 +1,15 @@
 def nyc_pigeon_organizer(data)
 	final_pigeon_hash = {}
 	data.each do |(color_gender_lives,value)|
-
-		value.each do |(all_stats,all_names)|
+		value.each do |(all_traits,all_names)|
 			all_names.each do |name|
-				if final_pigeon_hash[name] == nil
+				if !final_pigeon_hash[name]
 					final_pigeon_hash[name] = {}
 				end
-				if final_pigeon_hash[name][color_gender_lives] == nil
+				if !final_pigeon_hash[name][color_gender_lives] 
 					final_pigeon_hash[name][color_gender_lives] = []
 				end
-				final_pigeon_hash[name][color_gender_lives].push(all_stats.to_s)
+				final_pigeon_hash[name][color_gender_lives].push(all_traits.to_s)
 			end
 			
 		end
