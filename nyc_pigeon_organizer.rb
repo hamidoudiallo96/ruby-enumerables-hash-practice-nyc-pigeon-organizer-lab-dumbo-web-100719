@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 				if !final_pigeon_hash[name][color_gender_lives] 
 					final_pigeon_hash[name][color_gender_lives] = []
 				end
-				final_pigeon_hash[name][color_gender_lives].push(all_traits.to_s)
+				final_pigeon_hash[name][color_gender_lives] << all_traits.to_s
 			end
 			
 		end
